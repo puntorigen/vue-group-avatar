@@ -52,8 +52,8 @@ export default {
 ### GroupAvatar component API
 | Prop | Type | Description |
 | --- | --- | --- |
-| avatars | Array | To be an array with a specific object called " |
-| max | Number | Maximum number of avatarts displayed... " |
+| avatars | Array | To be an array with a specific object called. |
+| max | Number | Maximum number of avatarts displayed. |
 
 ### License
 
