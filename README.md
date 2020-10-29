@@ -28,7 +28,7 @@ export default {
 
 ``` bash
 <template>
-    <GroupAvatar :avatars="avatar" :max="max"></GroupAvatar>
+    <GroupAvatar :avatars="avatars" :max="max"></GroupAvatar>
 </template>
 
 <script>
