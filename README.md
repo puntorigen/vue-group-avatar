@@ -36,7 +36,7 @@ export default {
     name: 'home',
     data() {
       return {
-	  	max:  2,
+	  	  max:  2,
         avatars: [
           {img: "@/assets/img/img1.png"},
           {img: "@/assets/img/img2.png"},
