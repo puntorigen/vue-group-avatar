@@ -1,27 +1,37 @@
-import GroupAvatar from "@/components/GroupAvatar";
+import GroupAvatar from "./components/GroupAvatar";
 
-function install() {
-    if (install.installed) return
-    install.installed = true
-    Vue.component('GroupAvatar', component)
+//Exportación de los componentes individualmente
+export { GroupAvatar }
+
+//Instalación de la librería como un plugin
+function registerComponents(Vue) {
+    Vue.component('GroupAvatar', GroupAvatar)
 }
 
-const plugin = { install }
+// Create module definition for Vue.use()
+const plugin = {
+    /* version: VERSION, */
+    install(Vue, options) {
+        const finalOptions = Object.assign({}, {
+            installComponents: true,
+            componentsPrefix: '',
+        }, options)
 
+        if (finalOptions.installComponents) {
+            registerComponents(Vue, finalOptions.componentsPrefix)
+        }
+    },
+}
+
+export default plugin
+
+// Auto-install
 let GlobalVue = null
-
-if (typeof window !== "undefined") {
+if (typeof window !== 'undefined') {
     GlobalVue = window.Vue
+} else if (typeof global !== 'undefined') {
+    GlobalVue = global.Vue
 }
-
-if (typeof global !== "undefined") {
-    GlobalVue = global.vue
-}
-
 if (GlobalVue) {
-    GlobalVue.user(plugin)
+    GlobalVue.use(plugin)
 }
-
-component.install = install
-
-export default component

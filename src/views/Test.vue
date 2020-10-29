@@ -12,7 +12,7 @@ export default {
   },
   data() {
     return {
-      max: 3,
+      max: 5,
       avatar: [
         {
           img:

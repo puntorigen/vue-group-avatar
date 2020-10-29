@@ -1,11 +1,11 @@
 {
-    "name": "group-avatar",
+    "name": "vue-group-avatar",
     "description": "Simple component to group your avatars in a minimalist way",
-    "version": "0.1.0",
+    "version": "0.1.4",
     "private": false,
-    "main": "dist/group-avatar.umd.js",
-    "module": "dist/group-avatar.esm.js",
-    "unpkg": "dist/group-avatar.min.js",
+    "main": "dist/vue-group-avatar.umd.js",
+    "module": "dist/vue-group-avatar.esm.js",
+    "unpkg": "dist/vue-group-avatar.min.js",
     "browser": {
         "./sfc": "src/group-avatar.vue"
     },
@@ -18,26 +18,36 @@
         "build": "npm run build:unpkg & npm run build:es & npm run build:umd",
         "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/group-avatar.umd.js",
         "build:es": "rollup --config build/rollup.config.js --format es --file dist/group-avatar.esm.js",
-        "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/group-avatar.min.js"
+        "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/group-avatar.min.js",
+        "compile": "npx vue-cli-service build --target lib --vue-group-avatar components-lib src/index.js"
     },
     "keywords": [
         "avatar-vue",
         "group-avatar-vue",
         "vue",
         "vue component",
-        "avatar"
+        "avatar",
+        "components",
+        "component",
+        "javascript",
+        "css",
+        "ui",
+        "frontend",
+        "responsive",
+        "less"
     ],
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/mr-josue"
+        "url": "git+https://github.com/mr-josue/vue-group-avatar"
     },
     "bugs": {
-        "url": "https://github.com/mr-josue"
+        "url": "https://github.com/mr-josue/vue-group-avatar/issues"
     },
-    "homepage": "https://github.com/mr-josue",
+    "homepage": "https://github.com/mr-josue/vue-group-avatar",
     "author": "Josué Ayala <ayalavalencia11@gmail.com>",
     "license": "MIT",
     "dependencies": {
+        "@vue/compiler-sfc": "^3.0.2",
         "core-js": "^3.6.5",
         "vue": "^2.6.11",
         "vue-router": "^3.2.0"
