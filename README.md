@@ -38,11 +38,11 @@ export default {
       return {
 	  	max:  2,
         avatars: [
-			{img: "@/assets/img/img1.png"},
-			{img: "@/assets/img/img2.png"},
-			{img: "@/assets/img/img3.png"},
-			{img: "@/assets/img/img4.png"}
-		]
+          {img: "@/assets/img/img1.png"},
+          {img: "@/assets/img/img2.png"},
+          {img: "@/assets/img/img3.png"},
+          {img: "@/assets/img/img4.png"}
+        ]
       }
     }
   }
@@ -52,7 +52,8 @@ export default {
 ### GroupAvatar component API
 | Prop | Type | Description |
 | --- | --- | --- |
-| avatars | Array | To be an array with a specific object called "
+| avatars | Array | To be an array with a specific object called " |
+| max | Number | Maximum number of avatarts displayed... " |
 
 ### License
 
