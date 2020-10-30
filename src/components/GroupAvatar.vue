@@ -1,13 +1,14 @@
 <template>
   <div class="group__avatar">
-    <Avatar
-      v-for="(avatar, index) in avatars"
-      :key="index"
-      :src="avatar"
-      v-if="index < parseInt(max)"
-      :last="index + 1 == parseInt(max)"
-      :more_avatars="avatars.length == max ? 0 : parseInt(max)"
-    ></Avatar>
+    <div class="_avatar" v-for="(avatar, index) in avatars" :key="index">
+      <Avatar
+        :src="avatar"
+        v-if="index < parseInt(max)"
+        :last="index + 1 == parseInt(max)"
+        :more_avatars="avatars.length == max ? 0 : parseInt(max)"
+        :borderColor="borderColor"
+      ></Avatar>
+    </div>
   </div>
 </template>
 
@@ -25,6 +26,10 @@ export default {
     },
     avatars: {
       type: Array,
+    },
+    borderColor: {
+      type: String,
+      default: "#FFFFFF",
     },
   },
 };
