@@ -3,10 +3,10 @@
     <Avatar
       v-for="(avatar, index) in avatars"
       :key="index"
-      :src="avatar.img"
+      :src="avatar"
       v-if="index < parseInt(max)"
-      :last="(index + 1) == parseInt(max)"
-      :more_avatars="avatars.length - parseInt(max)"
+      :last="index + 1 == parseInt(max)"
+      :more_avatars="avatars.length == max ? 0 : parseInt(max)"
     ></Avatar>
   </div>
 </template>
