@@ -1,5 +1,5 @@
 <template>
-  <div class="__avatar">
+  <div class="__avatar" :style="[{ border: `2px solid ${borderColor}` }]">
     <img :src="src" alt="" />
     <div v-if="last" class="__panel_show_more">
       <div>+{{ more_avatars }}</div>
@@ -21,6 +21,9 @@ export default {
     more_avatars: {
       type: Number,
       default: 0,
+    },
+    borderColor: {
+      type: String,
     },
   },
 };

@@ -1,7 +1,7 @@
 ## Vue group avatar
 
 A minimalist component to display a group of avatars in your application 👀🎉
-![](https://firebasestorage.googleapis.com/v0/b/social-network-f764f.appspot.com/o/localhost_8080_npm%20copia.png?alt=media&token=2d1dad63-ae19-4d41-8838-9c8662a83023)
+![](https://firebasestorage.googleapis.com/v0/b/josueayala27-49da6.appspot.com/o/localhost_8080_npm%20copia.png?alt=media&token=349146fd-0b29-4868-afc1-1ec3cd8bc152)
 
 ### Install
 ``` bash
@@ -28,7 +28,7 @@ export default {
 
 ``` bash
 <template>
-    <GroupAvatar :avatars="avatars" :max="max"></GroupAvatar>
+    <GroupAvatar borderColor="#0092FF" :avatars="avatars" :max="max"></GroupAvatar>
 </template>
 
 <script>
@@ -50,11 +50,12 @@ export default {
 ```
 
 ### GroupAvatar component API
-| Prop | Type | Description |
-| --- | --- | --- |
-| avatars | Array | To be an array with a specific object called |
-| max | Number | Maximum number of avatarts displayed |
+| Prop | Type | Default | Description |
+| --- | --- | --- | --- |
+| avatars | Array | null | You must have an array with the routes of all your photographs, so that they can be displayed |
+| max | Number | 5 | Maximum number of avatarts displayed |
+| borderColor | String | #FFFFFF | You can change the color of the borders using __hexadecimal__ codes for the colors |
 
 ### License
 
-[MIT]
+MIT
