@@ -30,9 +30,9 @@ export default {
 </script>
 <style lang="less" scoped>
 .__avatar {
-  width: 40px;
-  height: 40px;
-  border-radius: 50px;
+  width: 120px;
+  height: 120px;
+  border-radius: 120px;
   overflow: hidden;
   border: 2px solid white;
   transition: all 0.25s ease;
