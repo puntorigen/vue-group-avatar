@@ -1,7 +1,7 @@
 {
     "name": "vue-group-avatar",
     "description": "Simple component to group your avatars in a minimalist way",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "private": false,
     "main": "dist/vue-group-avatar.umd.js",
     "module": "dist/vue-group-avatar.esm.js",
